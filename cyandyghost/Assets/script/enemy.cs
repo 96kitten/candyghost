@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class enemy : MonoBehaviour {
-	
-	float speed = 3.0f;
-	// Use this for initialization
+	private float speed = 4;
+
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		transform.position = new Vector2 (0.0f, speed * Time.deltaTime);
+		transform.position +=new Vector3 (0,-speed * Time.deltaTime);
+		if (transform.position.y <= -6) {
+			Destroy (gameObject);
+		}
 	}
 }
