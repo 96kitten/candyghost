@@ -519,6 +519,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e8a4a6f5de5445c81a2f3b2cf58f02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitpoint: {fileID: 1260362302}
+  hitpoint2: {fileID: 1815287575}
+  hitpoint3: {fileID: 7895917}
+  hitpoint4: {fileID: 1327929857}
+  hitpoint5: {fileID: 170310408}
 --- !u!60 &592362543
 PolygonCollider2D:
   m_ObjectHideFlags: 0
