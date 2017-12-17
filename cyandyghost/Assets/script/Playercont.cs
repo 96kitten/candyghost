@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Playercont : MonoBehaviour {
 	int hp;
@@ -9,10 +10,11 @@ public class Playercont : MonoBehaviour {
 	}
 
 	void Update () {
-		
+		if (hp <= 0) {
+			SceneManager.LoadScene("Finish");
+		}
 	}
 	void OnCollisionEnter2D (Collision2D other){
-		Debug.Log ("INN");
 		if (other.gameObject.tag == "enemy") {
 			hp = hp - 1;
 			Debug.Log ("damage");

@@ -18,4 +18,8 @@ public class Startbutton : MonoBehaviour {
 	{
 		SceneManager.LoadScene("gamescene");
 	}
+	public void toTitle()
+	{
+		SceneManager.LoadScene("Title");
+	}
 }
