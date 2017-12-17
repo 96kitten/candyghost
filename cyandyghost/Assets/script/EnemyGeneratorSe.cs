@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyGenerator : MonoBehaviour {
+public class EnemyGeneratorSe : MonoBehaviour {
 	float timer = 0.0f; 
-	float interval= 1.5f;
+	float interval= 2.2f;
 	public GameObject ene;
 	// Use this for initialization
 	void Start () {
@@ -15,7 +15,7 @@ public class EnemyGenerator : MonoBehaviour {
 	void Update () {
 		timer += Time.deltaTime;
 		if (timer >= interval) {
-			transform.position = new Vector3 (Random.Range(-0.1f,1.6f),5.6f);
+			transform.position = new Vector3 (Random.Range(-2.4f,-0.4f),5.6f);
 			Instantiate(ene, transform.position,transform.rotation);
 			timer = 0;
 		}
