@@ -22,4 +22,12 @@ public class Startbutton : MonoBehaviour {
 	{
 		SceneManager.LoadScene("Title");
 	}
+	public void play()
+	{
+		SceneManager.LoadScene("Howtoplay");
+	}
+	public void Nextpage()
+	{
+		SceneManager.LoadScene("Pagetwo");
+	}
 }

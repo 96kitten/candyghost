@@ -521,11 +521,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e8a4a6f5de5445c81a2f3b2cf58f02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
+  flag: 0
   hitpoint: {fileID: 1260362302}
   hitpoint2: {fileID: 1815287575}
   hitpoint3: {fileID: 7895917}
   hitpoint4: {fileID: 1327929857}
   hitpoint5: {fileID: 170310408}
+  scoreText: {fileID: 2042350809}
 --- !u!60 &592362543
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -729,7 +732,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 648481080}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 187, y: -333.52008, z: 0}
+  m_LocalPosition: {x: 187, y: -0.020019531, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1367952003}
@@ -737,9 +740,9 @@ RectTransform:
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -0.5, y: -0.020080566}
-  m_SizeDelta: {x: -1, y: 0.049926758}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.5, y: -0.019989014}
+  m_SizeDelta: {x: -1, y: 0.049987793}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &648481082
 MonoBehaviour:
@@ -1027,6 +1030,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ene: {fileID: 1559612071246842, guid: 5bab7a9e31a234ed9baaa1cb5e8bd04e, type: 2}
+  smsweet: {fileID: 1396046206400118, guid: 7027880f7daf740ae85825ece6af5ae9, type: 2}
+  bisweet: {fileID: 1794850253135912, guid: c89a33360fe384fde8783116211f5557, type: 2}
+  plushp: {fileID: 1923908240623924, guid: 9375ec7aee78541db8cd1e447788d7de, type: 2}
+  minushp: {fileID: 1841207256154282, guid: edfee51c0bc3547cbba035247e7733a0, type: 2}
+  muteki: {fileID: 1477432261354294, guid: 8c47d2162d22b4ba78cebf48f1431536, type: 2}
 --- !u!4 &777038663
 Transform:
   m_ObjectHideFlags: 0
@@ -1544,7 +1552,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1496943271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -187.47, y: -333.52005, z: 0}
+  m_LocalPosition: {x: -187.47, y: -0.020019531, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 641742188}
@@ -1552,9 +1560,9 @@ RectTransform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0.02999878, y: -0.019989014}
-  m_SizeDelta: {x: 0, y: 0.049987793}
+  m_SizeDelta: {x: 0, y: 0.039978027}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1496943273
 MonoBehaviour:
@@ -1791,6 +1799,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ene: {fileID: 1559612071246842, guid: 5bab7a9e31a234ed9baaa1cb5e8bd04e, type: 2}
+  smsweet: {fileID: 1396046206400118, guid: 7027880f7daf740ae85825ece6af5ae9, type: 2}
+  bisweet: {fileID: 1794850253135912, guid: c89a33360fe384fde8783116211f5557, type: 2}
+  plushp: {fileID: 1923908240623924, guid: 9375ec7aee78541db8cd1e447788d7de, type: 2}
+  minushp: {fileID: 1841207256154282, guid: edfee51c0bc3547cbba035247e7733a0, type: 2}
+  muteki: {fileID: 1477432261354294, guid: 8c47d2162d22b4ba78cebf48f1431536, type: 2}
 --- !u!4 &1945370225
 Transform:
   m_ObjectHideFlags: 0
@@ -1860,10 +1873,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71ac476e594b6425cad7fd69561b2fe4, type: 3}
-    m_FontSize: 14
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0

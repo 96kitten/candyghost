@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - enemy
+  - smallpoint
+  - bigpoint
+  - hppuls
+  - hpminas
+  - muteki
   layers:
   - Default
   - TransparentFX
