@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MusicScript : MonoBehaviour {
-
-	private AudioSource Candyeat;
+	public AudioClip Candyeat;
+	public AudioClip Enemyse;
 
 	void Start () {
 		
@@ -16,7 +16,13 @@ public class MusicScript : MonoBehaviour {
 	}
 	void OnCollisionEnter2D (Collision2D other){
 		if (other.gameObject.tag == "smallpoint") {
-			Candyeat.PlayOneShot (Candyeat.clip);
+			gameObject.GetComponent<AudioSource> ().PlayOneShot (Candyeat);
+		}
+		if (other.gameObject.tag == "bigpoint") {
+			gameObject.GetComponent<AudioSource> ().PlayOneShot (Candyeat);
+		}
+		if (other.gameObject.tag == "enemy") {
+			gameObject.GetComponent<AudioSource> ().PlayOneShot (Enemyse);
 		}
 	}
 }
