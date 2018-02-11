@@ -1,11 +1,19 @@
 fileFormatVersion: 2
 guid: 20e8a4a6f5de5445c81a2f3b2cf58f02
-timeCreated: 1512281684
+timeCreated: 1518318799
 licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - hitpoint: {instanceID: 0}
+  - hitpoint2: {instanceID: 0}
+  - hitpoint3: {instanceID: 0}
+  - hitpoint4: {instanceID: 0}
+  - hitpoint5: {instanceID: 0}
+  - scoreText: {instanceID: 0}
+  - floaillust: {instanceID: 0}
+  - candyeat: {fileID: 8300000, guid: 5e8db27844ae24e12b1e5ede3f91b88c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
